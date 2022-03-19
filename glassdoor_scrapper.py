@@ -211,11 +211,15 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
         #Clicking on the "next page" button
         try:
-            page = driver.find_element_by_xpath('.//div[@class="tbl fill padHorz margVert"]').text
+            #page = driver.find_element_by_xpath('.//div[@class="tbl fill padHorz margVert"]').text
+            page = driver.find_element_by_xpath('.//div[@class="tbl fill px my d-flex"]').text
+     
             page = page.split()
             if page[1]==page[3]:
                 break
-            driver.find_element_by_xpath('.//li[@class="next"]//a').click()
+            #driver.find_element_by_xpath('.//li[@class="next"]//a').click()
+            driver.find_element_by_css_selector('[alt="next-icon"]').click()
+            
         except NoSuchElementException:
             print("Scraping terminated before reaching target number of jobs. Needed {}, got {}.".format(num_jobs, len(jobs)))
             break
