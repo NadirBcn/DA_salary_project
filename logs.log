@@ -9310,3 +9310,7 @@ AssertionError
                  ExtraTreesRegressor(n_jobs=-1, random_state=3604)]]), probability_threshold=None, encoded_labels=True, drift_report=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None, drift_kwargs=None)
 2022-05-09 23:53:57,134:INFO:Checking exceptions
 2022-05-09 23:53:57,134:INFO:Preloading libraries
+2022-05-09 23:55:26,821:INFO:Initializing load_model()
+2022-05-09 23:55:26,821:INFO:load_model(model_name=rf_model_api, platform=None, authentication=None, verbose=True)
+2022-05-09 23:55:39,456:INFO:Initializing load_model()
+2022-05-09 23:55:39,456:INFO:load_model(model_name=rf_model_api, platform=None, authentication=None, verbose=True)
